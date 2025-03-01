@@ -31,5 +31,5 @@ jobs:
       - name: Use gcloud CLI
         run: gcloud info
 
-      - name: Build and push Docker image
+      - name: Build and push Docker Image
         run: gcloud builds submit --tag us-central1-docker.pkg.dev/encoded-adviser-452421-d1/notely-ar-repo .
