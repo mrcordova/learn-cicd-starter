@@ -18,6 +18,9 @@ jobs:
       - name: Intall goose
         run: go install github.com/pressly/goose/v3/cmd/goose@latest
 
+      - name: Migrate Up
+        run: ./scripts/migrateup.sh
+
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
